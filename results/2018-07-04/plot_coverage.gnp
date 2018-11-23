@@ -1,0 +1,41 @@
+reset
+set terminal png large size 2000, 2000
+set output "coverage.png"
+set multiplot layout 3,3
+set xrange [1:1000]
+set logscale x
+
+set title "C. pipiens A1"
+plot 'bt227.cov' using 2:3 with lines lw 5 title 'bowtie2', \
+     'bwa27.cov' using 2:3 with lines lw 5 title 'bwa'
+
+set title "C. pipiens A4"
+plot 'bt228.cov' using 2:3 with lines lw 5 title 'bowtie2', \
+     'bwa28.cov' using 2:3 with lines lw 5 title 'bwa'
+
+set title "C. pipiens M1"
+plot 'bt229.cov' using 2:3 with lines lw 5 title 'bowtie2', \
+     'bwa29.cov' using 2:3 with lines lw 5 title 'bwa'
+
+set title "C. torrentium M2"
+plot 'bt230.cov' using 2:3 with lines lw 5 title 'bowtie2', \
+     'bwa30.cov' using 2:3 with lines lw 5 title 'bwa'
+
+set title "C. pipiens S1"
+plot 'bt231.cov' using 2:3 with lines lw 5 title 'bowtie2', \
+     'bwa31.cov' using 2:3 with lines lw 5 title 'bwa'
+
+set title "C. pipiens S2"
+plot 'bt232.cov' using 2:3 with lines lw 5 title 'bowtie2', \
+     'bwa32.cov' using 2:3 with lines lw 5 title 'bwa'
+
+set title "C. pipiens S3"
+plot 'bt233.cov' using 2:3 with lines lw 5 title 'bowtie2', \
+     'bwa33.cov' using 2:3 with lines lw 5 title 'bwa'
+
+set title "C. torrentium M4"
+plot 'bt234.cov' using 2:3 with lines lw 5 title 'bowtie2', \
+     'bwa34.cov' using 2:3 with lines lw 5 title 'bwa'
+
+unset multiplot
+quit
