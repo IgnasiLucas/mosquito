@@ -1,0 +1,8 @@
+1.molA1_test.bam PS=41
+2.pipA4_test.bam PS=41
+3.molM1_test.bam PS=52
+4.torM2_test.bam PS=56
+5.molS1_test.bam PS=30
+6.mixS2_test.bam PS=26
+7.mixS3_test.bam PS=41
+8.torM4_test.bam PS=41
